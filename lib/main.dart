@@ -19,7 +19,7 @@ import 'package:std/members/yusuf.dart';
 void main() {
   runApp( MaterialApp(
     // home: myHome(),
-    // initialRoute: "/about",
+    // initialRoute: "/",
     routes: {
       "/": (context)=>myHome(),
       "/about": (context)=>about(),

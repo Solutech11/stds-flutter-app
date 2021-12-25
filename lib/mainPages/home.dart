@@ -1,7 +1,9 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class myHome extends StatefulWidget {
-  const myHome({Key? key}) : super(key: key);
+  // const myHome({Key? key}) : super(key: key);
 
   @override
   State<myHome> createState() => _myHomeState();
@@ -11,10 +13,10 @@ class _myHomeState extends State<myHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 235, 232, 232),
+        backgroundColor: Color.fromARGB(255, 235, 232, 232),
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: const Color.fromARGB(255, 180, 68, 68),
+          backgroundColor: Color.fromARGB(255, 180, 68, 68),
           title: const Text(
             "STD(Sexual Transmitted disease)",
             style: TextStyle(
@@ -26,31 +28,25 @@ class _myHomeState extends State<myHome> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Expanded(
-                child: Image.asset(
-                  'assets/assignment 1.jpg',
-                  height: 300.0,
-                  width: 600.0,
-                ),
-                flex: 3,
+              Image.asset(
+                'assets/assignment 1.jpg',
+                height: 300.0,
+                width: 600.0,
               ),
-              Expanded(
-                flex: 2,
-                child: Container(
-                  padding: const EdgeInsets.fromLTRB(6.0, 1.0, 6.0, 1.0),
-                  child: const Text(
-                    """
+              Container(
+                padding: const EdgeInsets.fromLTRB(6.0, 1.0, 6.0, 1.0),
+                child: const Text(
+                  """
           This project is done by group 2 for cse-231.
              
           We will be talking about STD which is also known as Sexualy transmited diseases their types and streatment.
             
           With this I know you will be opened to these kind of diseases.
-                  """,
-                    style: TextStyle(
-                      fontFamily: 'mainfnt',
-                      fontSize: 15.0,
-                      letterSpacing: 0.6,
-                    ),
+                """,
+                  style: TextStyle(
+                    fontFamily: 'mainfnt',
+                    fontSize: 15.0,
+                    letterSpacing: 0.6,
                   ),
                 ),
               ),
@@ -92,6 +88,7 @@ class _myHomeState extends State<myHome> {
               )
             ],
           ),
-        ));
+        )
+      );
   }
 }

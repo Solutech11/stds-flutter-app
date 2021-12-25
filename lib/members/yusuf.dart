@@ -144,7 +144,7 @@ class _yusufuState extends State<yusufu> {
                           children: const [
                             CircleAvatar(
                               backgroundImage:
-                                  AssetImage("assets/icon/nepa.png"),
+                                  AssetImage("assets/icon/nepa.jpg"),
                               radius: 25.0,
                             ),
                             Text("NEPA",
@@ -158,7 +158,7 @@ class _yusufuState extends State<yusufu> {
                           children: const [
                             CircleAvatar(
                               backgroundImage:
-                                  AssetImage("assets/icon/math.jpg"),
+                                  AssetImage("assets/icon/math.jpeg"),
                               radius: 25.0,
                             ),
                             Text("Math",
